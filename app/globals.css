@@ -3,14 +3,13 @@
 :root {
   --bg: #0b0709;
   --surface: #120d10;
-  --surface-2: #1a1318;
+  --surface-2: #1a1216;
   --border: #241a20;
   --text: #f8f4f6;
   --text-muted: #948a91;
   --rose: #e8b4b8;
   --rose-hover: #f0c8cb;
   --gold: #d4af37;
-  --deep-rose: #b76e79;
 }
 
 * {
@@ -60,6 +59,20 @@ body {
   animation: marquee 30s linear infinite;
 }
 
+@keyframes pulse-whatsapp {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+}
+
+.animate-pulse-whatsapp {
+  animation: pulse-whatsapp 2s ease-in-out infinite;
+}
+
 @layer components {
   .input-field {
     width: 100%;
@@ -73,7 +86,7 @@ body {
   }
 
   .input-field::placeholder {
-    color: #5b5058;
+    color: #525b62;
   }
 
   .input-field:focus {
